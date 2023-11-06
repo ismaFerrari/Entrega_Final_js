@@ -1,0 +1,33 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fetch Example</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Lista de Usuarios</h1>
+    <ul id="user-list">
+        <!-- Datos de usuarios se cargarán aquí -->
+    </ul>
+    
+    <h2>Ingresar un nuevo usuario:</h2>
+    <form id="user-form">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name">
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <br>
+        <button type="submit">Guardar</button>
+    </form>
+    
+    <h2>Seleccionar un usuario para eliminar:</h2>
+    <select id="user-select">
+        <option value="" disabled selected>Seleccionar Usuario</option>
+    </select>
+    <button id="delete-user">Eliminar Usuario</button>
+
+    <script src="main.js"></script>
+</body>
+</html>
